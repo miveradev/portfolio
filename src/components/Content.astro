@@ -1,14 +1,43 @@
 ---
 import Hero from "./Hero.astro";
+import Card from "./Card.astro";
+import Pic from "./Pic.astro";
 ---
-<div class="content">
+<div class="header">
     <Hero></Hero>
+    <Pic></Pic>
+</div>
+<div class="content">
+    <Card number={1}></Card>
+    <Card number={2}></Card>
+    <Card number={3}></Card>
+    <Card number={4}></Card>
+    <Card number={5}></Card>
+    <Card number={6}></Card>
+    <Card number={7}></Card>
+    <Card number={8}></Card>
+    <Card number={9}></Card>
+    <Card number={10}></Card>
+    <Card number={11}></Card>
+    <Card number={12}></Card>
+    <Card number={13}></Card>
+    <Card number={14}></Card>
 </div>
 
 <style>
 
-    .content {
+    .header {
+        display: flex;
+        margin-top: 20px;
+        gap: 30px;
+        height: 470px;
+    }
 
+    .content {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 5px;
     }
 
 </style>
