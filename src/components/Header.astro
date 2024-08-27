@@ -1,0 +1,107 @@
+---
+console.log('javascript')
+---
+
+<header>
+    <div class="header">
+        <div class="logo">
+            <div class="circle"></div>
+            <section class="logo-text"><b>mivera</b></section>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="cv" href="mivera-cv.pdf" target="_blank">Full CV</a>
+    </div>
+</header>
+
+<style>
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        margin-top: 1rem;
+        color: var(--grey);
+    }
+
+    .logo {
+        margin-left: 20%;
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+    }
+
+    .circle {
+        background-color: var(--violet);
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 2rem;
+        margin-top: 1px;
+    }
+
+    .logo-text {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .logo-text:hover {
+        color: var(--violet);
+    }
+
+    nav {
+        padding: 0;
+        
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    li {
+        list-style: none;
+        cursor: pointer;
+    }
+
+    a {
+        font-size: 12px;
+        font-weight: 400;
+        text-decoration: none;
+        transition: 0.3s;
+        color: var(--black);
+    }
+
+    a:hover {
+        color: var(--violet);
+    }
+
+    .cv {
+        margin-right: 20%;
+        border-radius: 2rem;
+        padding: 0.3rem 1.8rem;
+        font-size: 11px;
+        font-weight: 300;
+        font-family: 'Inter';
+        background-color: var(--violet);
+        color: white;
+        border: 1px solid var(--violet);
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .cv:hover {
+        background-color: white;
+        color: var(--violet);
+    }
+
+</style>
