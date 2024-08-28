@@ -8,20 +8,21 @@ import Pic from "./Pic.astro";
     <Pic></Pic>
 </div>
 <div class="content">
-    <Card number={1}></Card>
-    <Card number={2}></Card>
-    <Card number={3}></Card>
-    <Card number={4}></Card>
-    <Card number={5}></Card>
-    <Card number={6}></Card>
-    <Card number={7}></Card>
-    <Card number={8}></Card>
-    <Card number={9}></Card>
-    <Card number={10}></Card>
-    <Card number={11}></Card>
-    <Card number={12}></Card>
-    <Card number={13}></Card>
-    <Card number={14}></Card>
+    <Card
+        title={'Scorevo'}
+        description={"Football Scoreboard for live events"}
+        img=""
+        link="#"
+        color="#CD6767">
+    </Card>
+    <Card
+        title={'Marvel Reading Order Tracker'}
+        description={"Comic tracker following Marvel Master Reading Order"}
+        img=""
+        link="#"
+        color="#6F8860">
+    </Card>
+    
 </div>
 
 <style>
@@ -36,10 +37,10 @@ import Pic from "./Pic.astro";
     }
 
     .content {
-        margin-top: 40px;
+        margin-top: 36px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        gap: 5px;
+        gap: 30px;
     }
 
 </style>

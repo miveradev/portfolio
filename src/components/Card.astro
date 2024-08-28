@@ -1,25 +1,72 @@
 ---
 interface Props {
-	number: number;
+    title: string,
+    description: string,
+    img: string,
+    link: string,
+    color: string;
 }
 
-const { number } = Astro.props;
+const { title, description, img, link, color} = Astro.props;
 ---
-<div>
-    {number}
-</div>
+<section>
+    <h3>{title}</h3>
+    <p>{description}</p>
+    <a href={link}>
+        <div class="live-view">
+            <svg width="20px" height="20px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#201F17">
+                <path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="#201F17" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </div>
+    </a>
+</section>
 
-<style>
+<style define:vars={{ color: color }}>
 
-    div {
-        background-color: var(--violet);
+    
+
+    section {
+        position: relative;
+        background-color: var(--color);
+        color: white;
+        padding: 30px 0px 0px 40px;
+        height: 400px;
+        border-radius: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 12px;
+        font-weight: 500;
+    }
+
+    p {
+        margin: 0px;
+        padding: 0px;
+        font-size: 14px;
+        font-weight: 200;
+    }
+
+    .live-view {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 50px;
+        width: 50px;
+        margin: 0 30px 26px 0;
+        background: white;
+        border-radius: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 200px;
-        border: 2px solid black;
-        font-size: 24px;
-        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+        transform-origin: 50% 50%;
+    }
+
+    .live-view:hover {
+        transform: scale(1.1);
     }
 
 </style>
