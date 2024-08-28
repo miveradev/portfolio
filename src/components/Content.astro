@@ -7,22 +7,41 @@ import Pic from "./Pic.astro";
     <Hero></Hero>
     <Pic></Pic>
 </div>
-<div class="content">
-    <Card
-        title={'Scorevo'}
-        description={"Football Scoreboard for live events"}
-        img=""
-        link="#"
-        color="#CD6767">
-    </Card>
-    <Card
-        title={'Marvel Reading Order Tracker'}
-        description={"Comic tracker following Marvel Master Reading Order"}
-        img=""
-        link="#"
-        color="#6F8860">
-    </Card>
-    
+<div id="projects">
+    <div class="content">
+        <Card
+            title={'Scorevo'}
+            description={"Football Scoreboard for live events"}
+            img=""
+            link_repo="https://www.github.com/miveradev/scorevo"
+            link_view="#"
+            color="#CD6767">
+        </Card>
+        <Card
+            title={'Marvel Reading Order Tracker'}
+            description={"Comic tracker following Marvel Master Reading Order"}
+            img=""
+            link_repo="#"
+            link_view="#"
+            color="#6F8860">
+        </Card>
+        <Card
+            title={'Scorevo'}
+            description={"Football Scoreboard for live events"}
+            img=""
+            link_repo="https://www.github.com/miveradev/scorevo"
+            link_view="#"
+            color="#CD6767">
+        </Card>
+        <Card
+            title={'Marvel Reading Order Tracker'}
+            description={"Comic tracker following Marvel Master Reading Order"}
+            img=""
+            link_repo="#"
+            link_view="#"
+            color="#6F8860">
+        </Card>
+    </div>
 </div>
 
 <style>
@@ -31,7 +50,6 @@ import Pic from "./Pic.astro";
         display: grid;
         grid-template-columns: 1fr auto;
         grid-template-rows: 1fr;
-        margin-top: 20px;
         gap: 30px;
         height: 470px;
     }
