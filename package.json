@@ -13,5 +13,8 @@
     "@astrojs/check": "^0.9.3",
     "astro": "^4.14.5",
     "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.6.1"
   }
 }
