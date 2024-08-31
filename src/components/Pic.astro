@@ -25,4 +25,42 @@
     }
 
 
+    @media (max-width:1800px) {
+        section {
+            height: 100%;
+            width: 200px;
+            margin: 0px;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        img {
+            position: relative;
+            height: 100%;
+            transition: all 0.3s ease-in-out;
+            transform-origin: 50% 50%;
+            left: -30px;
+        }
+    }
+
+    @media (max-width:768px) {
+        section {
+            height: 300px;
+            width: 100%;
+            margin: 0px;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        img {
+            position: relative;
+            transition: all 0.3s ease-in-out;
+            transform-origin: 50% 50%;
+            left: 30%;
+            top: 70px;
+            transform: scale(250%);
+        }
+    }
+
+
 </style>
